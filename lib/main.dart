@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryIconTheme: IconThemeData(
           color: Color.fromARGB(255, 19, 57, 121)
-        )
+        ),
+        fontFamily: 'Century Gothic'
       ),
       title: 'Cusco',
       debugShowCheckedModeBanner: false,

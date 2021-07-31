@@ -68,7 +68,8 @@ class AjustesPageState extends State<AjustesPage> {
               style: TextStyle(
                 color: Color.fromARGB(255, 19, 57, 121), 
                 fontWeight: FontWeight.bold,
-                fontSize: 25.0
+                fontSize: 25.0,
+                fontFamily: 'Century Gothic'
               ),
             )
           ],
