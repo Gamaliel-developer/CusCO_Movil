@@ -14,7 +14,7 @@ class HistorialPageState extends State<HistorialPage> {
           Center(
             child: Text("Historial", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40)),
           ),
-          _tabla(),
+          Tabla(),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
             child: Row(
@@ -46,9 +46,10 @@ class HistorialPageState extends State<HistorialPage> {
       ),
     );
   }
+}
 
-  Widget _tabla(){
-    Color getColor(Set<MaterialState> states) {
+class Tabla extends StatelessWidget {
+  Color getColor(Set<MaterialState> states) {
       const Set<MaterialState> interactiveStates = <MaterialState>{
         MaterialState.pressed,
         MaterialState.hovered,
@@ -70,6 +71,8 @@ class HistorialPageState extends State<HistorialPage> {
       }
       return Color.fromARGB(255, 220, 229, 249);
     }
+  @override
+  Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
       child: Container(
@@ -176,7 +179,6 @@ class HistorialPageState extends State<HistorialPage> {
           )
         ),
     );
-    
   }
-
+  
 }
